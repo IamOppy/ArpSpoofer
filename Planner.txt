@@ -1,0 +1,29 @@
+Title Arp_spoofer
+
+desc : A software that allows you to redirect the flow packets from the victims
+computer to the attacker(you)
+Retrieves the MacAddress of the router and retrieves the Mac of the victim
+
+Mac_Retriever
+    ip 
+    broadcast
+
+    function that combines ARP request with the broadcast
+    and returns scapy.srp[0][1].hwsrc a list type
+
+
+Arp_spoofer
+    target_ip = to get victims mac (from Mac classs)
+    source_ip = router
+    
+    function to send packet 
+
+
+
+RestoreARPDefaults
+    victims ip
+    source ip = router
+    source mac
+    function to send packet
+
+
